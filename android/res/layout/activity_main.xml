@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/options"
+        android:layout_width="172dp"
+        android:layout_height="140dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="196dp">
+
+        <RadioButton
+            android:id="@+id/facilOPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Facil"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <RadioButton
+            android:id="@+id/medioOPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Medio"
+            android:textColor="@android:color/holo_orange_light" />
+
+        <RadioButton
+            android:id="@+id/dificilOPT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Dificil"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/startBTN"
+        android:layout_width="119dp"
+        android:layout_height="74dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="130dp"
+        android:background="@drawable/bird"
+        android:onClick="clickIniciar" />
+
+    <Button
+        android:id="@+id/textView"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-130dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:onClick="clickIniciar"
+        android:text="INICIAR"
+        android:textColor="?android:attr/colorBackground" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="Seleccione la dificultad"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="30sp" />
+
+</RelativeLayout>
